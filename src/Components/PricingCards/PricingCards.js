@@ -1,24 +1,26 @@
 import "./PricingCards.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 const res = [
     {
-        name: "Regina Miles",
-        des: "Designer",
-        price: "4",
+        name: "FREE",
+        des: "Organize across all apps by hand",
+        price: "0",
         ben: [`Unlimited product updates`, `Unlimited product updates`, `Unlimited product updates`, `1GB  Cloud 
         storage`, `Email and community support`]
     },
     {
-        name: "Regina Miles",
-        des: "Designer",
-        price: "4",
+        name: "SILVER",
+        des: "Organize across all apps by hand",
+        price: "9.99",
         ben: [`Unlimited product updates`, `Unlimited product updates`, `Unlimited product updates`, `1GB  Cloud 
         storage`, `Email and community support`]
     },
     {
-        name: "Regina Miles",
-        des: "Designer",
-        price: "4",
+        name: "GOLD",
+        des: "Organize across all apps by hand",
+        price: "19.99",
         ben: [`Unlimited product updates`, `Unlimited product updates`, `Unlimited product updates`, `1GB  Cloud 
         storage`, `Email and community support`]
     },
@@ -27,16 +29,18 @@ const res = [
 function PricingCards() {
     return <div className="row">
         {res.map((value, index) => {
-            return <div className="col-12 col-md-4">
-                <div className="box">
-                    <h5>{value.name}</h5>
-                    <p>{value.des}</p>
-                    <h4>{value.price}</h4>
-                    <h6>Per Month</h6>
-                    <a href="#" className="btn btn-primary d-block">Try for free</a>
-                    <ul class="list-group">
+            return <div className="col-12 col-lg-4 pbox my-3">
+                <div className="box2 bg-white p-5 text-center">
+                    <h2>{value.name}</h2>
+                    <p className="px-5 fs-5 my-5">{value.des}</p>
+                    <h1 className="text-primary">{value.price} $</h1>
+                    <h6 className="text-info">Per Month</h6>
+                    <a href="#" className="btn btn-primary d-block py-3">Try for free</a>
+                    <ul className="list-group mt-5">
                         {value.ben.map((benefit) => {
-                            return <li class="list-group-item">{benefit}</li>
+                            return <li className="list-group-item border-0 text-start d-flex align-items-center">
+                                <FontAwesomeIcon icon={faCheckCircle} className="text-success fs-2 me-3 check" />
+                                {benefit}</li>
                         })}
                     </ul>
                 </div>

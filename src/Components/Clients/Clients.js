@@ -13,12 +13,10 @@ const res = [
     },
     {
         url: "./user.2.png",
-        name: "Regina Miles",
-        job: "Designer",
+        name: "John Doe",
+        job: "Web developer",
         rating: "5",
-        comment: `This proved to be impossible using 
-        concepts of space and time. Einstein 
-        new view of time first and then`,
+        comment: `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, distinctio!`,
     },
 ];
 
@@ -26,18 +24,20 @@ function Clients() {
 
     return <div className="row">
         {res.map((value) => {
-            return <div className="col-12 col-md-6">
-                <div className="box d-flex">
-                    <img src={value.url} alt="?" />
-                    <div>
-                        <h6>
+            return <div className="col-12 col-lg-6 my-5 ">
+                <div className="box3 d-lg-flex bg-white pe-lg-3 align-items-center d-block">
+                    <div className="ci-box w-100 w-lg-50 me-3">
+                        <img src={value.url} alt="?" className="w-100 ci" />
+                    </div>
+                    <div className="p-4 p-lg-0 py-lg-3 h bg-white">
+                        <h4 className="m-0">
                             {value.name}
-                        </h6>
-                        <p>
+                        </h4>
+                        <p className="fs-5 m-0">
                             {value.job}
                         </p>
                         <StarRating size='15' isReadOnly='true' initialRating={value.rating} />
-                        <p>
+                        <p className="m-0 text-muted">
                             {value.comment}
                         </p>
                     </div>

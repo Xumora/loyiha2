@@ -1,0 +1,15 @@
+.box3{
+    height: 100% !important;
+}
+@media screen and (min-width: 992px) {
+    .ci-box{
+        overflow: hidden;
+    }
+    .ci-box{
+        height: 100% !important;
+    }
+    .ci-box img{
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+}

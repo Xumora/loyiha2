@@ -1,37 +1,42 @@
-import "./Blocks.css";
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faUserFriends } from "@fortawesome/free-solid-svg-icons";
+import { faCog } from "@fortawesome/free-solid-svg-icons";
+import { faProjectDiagram } from "@fortawesome/free-solid-svg-icons";
+import { faChartPie } from "@fortawesome/free-solid-svg-icons";
+import { faChartLine } from "@fortawesome/free-solid-svg-icons";
+import { faChartBar } from "@fortawesome/free-solid-svg-icons";
+
 
 const res = [
     {
-        icon: faUsers,
-        icon: <Blocks />,
-        name: "Investment Trading",
+        icon: faUserFriends,
+        name: "Investment Trading1",
         text: "the quick fox jumps over the lazy dog",
     },
     {
-        icon: faUsers,
-        name: "Investment Trading",
+        icon: faCog,
+        name: "Investment Trading2",
         text: "the quick fox jumps over the lazy dog",
     },
     {
-        icon: faUsers,
-        name: "Investment Trading",
+        icon: faProjectDiagram,
+        name: "Investment Trading3",
         text: "the quick fox jumps over the lazy dog",
     },
     {
-        icon: faUsers,
-        name: "Investment Trading",
+        icon: faChartPie,
+        name: "Investment Trading4",
         text: "the quick fox jumps over the lazy dog",
     },
     {
-        icon: faUsers,
-        name: "Investment Trading",
+        icon: faChartLine,
+        name: "Investment Trading5",
         text: "the quick fox jumps over the lazy dog",
     },
     {
-        icon: faUsers,
-        name: "Investment Trading",
+        icon: faChartBar,
+        name: "Investment Trading6",
         text: "the quick fox jumps over the lazy dog",
     },
 ];
@@ -39,13 +44,13 @@ const res = [
 function Blocks() {
     return <div className="row">
         {res.map((value) => {
-            return <div className="col-12 col-md-4">
-                <div className="box d-flex">
-                    <FontAwesomeIcon icon={value.icon} className="text-primary" />
+            return <div className="col-12 col-lg-4 mt-5">
+                <div className="box d-flex p-5 text-white align-items-center border border-white h-100">
+                    <FontAwesomeIcon icon={value.icon} className="text-primary me-3 fs-1" />
                     <div>
-                        <h6>
+                        <h5>
                             {value.name}
-                        </h6>
+                        </h5>
                         <p>
                             {value.text}
                         </p>

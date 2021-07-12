@@ -1,0 +1,20 @@
+.btn-outline-primary{
+    border-radius: 30px !important;
+}
+.b:nth-child(2) .c{
+    background-color: #0d6efd !important;
+    color: white !important;
+    transform: scaleX(1.15) scaleY(1.25);
+}
+.b:nth-child(2) .c .ic{
+    color: white !important;
+}
+.b:nth-child(2) .c .btn-outline-primary{
+    border-color: white !important;
+    color: white !important;
+}
+@media screen and (max-width: 991px) {
+    .b:nth-child(2) .c{
+        transform: scaleX(1) scaleY(1) !important;
+    }
+}

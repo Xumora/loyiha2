@@ -1,0 +1,22 @@
+header .btn{
+    font-weight: bold;
+}
+header{
+    background-color: #252B42;
+}
+
+header .container{
+    position: relative;
+}
+#submenu{
+    background-color: #252B42;
+}
+@media screen and (max-width:991px) {
+    #submenu{
+        position: absolute;
+        top: 80px;
+    }
+    #submenu .btn{
+        display: block;
+    }
+}

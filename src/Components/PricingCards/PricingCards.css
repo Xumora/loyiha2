@@ -1,0 +1,11 @@
+.box2{
+    border-radius: 15px;
+}
+.pbox:first-child ul .list-group-item:nth-child(4) .check,
+.pbox:first-child ul .list-group-item:nth-child(5) .check{
+    color: silver !important;
+}
+
+.pbox:nth-child(2) ul .list-group-item:nth-child(5) .check{
+    color: silver !important;
+}
